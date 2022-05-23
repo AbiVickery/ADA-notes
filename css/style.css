@@ -27,3 +27,20 @@ a:active {
     color: #000000;
     background-color: #a60000;
 }
+
+:root {
+    --color-background: #ffffff;
+    --color-text: #000000;
+  } 
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: #000000;
+      --color-text: #ffffff;
+    }
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
