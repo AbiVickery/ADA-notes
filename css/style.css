@@ -13,3 +13,17 @@ strong, em {
 abbr {
     color: #a60000;
 }
+
+a {
+    color: #ff0000;
+}
+
+a:hover, a:visited, a:focus {
+    color: #a60000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000000;
+    background-color: #a60000;
+}
