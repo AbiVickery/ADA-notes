@@ -9,3 +9,7 @@ p, li {
 strong, em {
     color: #a60000;
 }
+
+abbr {
+    color: #a60000;
+}
