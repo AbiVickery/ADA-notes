@@ -30,3 +30,9 @@ function createLink(testItem) {
     listItem.appendChild(anchor);
     errorList.appendChild(listItem);
 }
+
+imgThumb.onmouseover = showImg;
+imgThumb.onmouseout = hideImg;
+
+imgThumb.onfocus = showImg;
+imgThumb.onblur = hideImg;
