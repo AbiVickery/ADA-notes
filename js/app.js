@@ -15,3 +15,18 @@ function validate(e) {
         e.preventDefault();
     }
 }
+
+function createLink(testItem) {
+    const listItem =
+    document.createElement('li');
+    const anchor =
+    document.createElement('a');
+
+    anchor.textContent = testItem.input.name + ' field is empty: fill in your ' + testItem.input.name + '.';
+    anchor.href = '#' + testItem.input.name;
+    anchor.onclick = function() {
+        testItem.input.focus();
+    };
+    listItem.appendChild(anchor);
+    errorList.appendChild(listItem);
+}
